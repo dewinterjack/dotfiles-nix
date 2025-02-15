@@ -21,7 +21,6 @@
     darwin,
     home-manager,
     nixos-wsl,
-    helix-master,
     ...
   } @ inputs: let
     darwinSystem = {user, arch ? "aarch64-darwin"}:
