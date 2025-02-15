@@ -66,7 +66,6 @@
   system = {
     defaults = {
       dock = {
-        autohide = true;
         orientation = "bottom";
         show-process-indicators = false;
         show-recents = false;

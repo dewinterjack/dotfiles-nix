@@ -23,7 +23,7 @@
     nixos-wsl,
     ...
   } @ inputs: let
-    darwinSystem = {user, arch ? "aarch64-darwin"}:
+    darwinSystem = {user, arch ? "aarch64-darwin", dockAutoHide ? false}:
       darwin.lib.darwinSystem {
         system = arch;
         modules = [
@@ -36,6 +36,7 @@
             };
             users.users.${user}.home = "/Users/${user}";
             nix.settings.trusted-users = [ user ];
+            system.defaults.dock.autohide = dockAutoHide;
           }
         ];
       };
@@ -61,9 +62,11 @@
     darwinConfigurations = {
       "Jacks-Mac-Studio" = darwinSystem {
         user = "jackdewinter";
+        dockAutoHide = false;
       };
       "Jacks-MacBook-Air" = darwinSystem {
         user = "jackdewinter";
+        dockAutoHide = true;
       };
     };
   };
