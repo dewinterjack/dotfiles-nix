@@ -8,7 +8,7 @@ Install nix:
 curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix | \ sh -s -- install
 ```
 
-with nix installed, run:
+Install dotfiles:
 
 ```bash
 nix run nix-darwin -- switch --flake github:dewinterjack/dotfiles-nix
