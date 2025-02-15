@@ -13,7 +13,8 @@
   environment.darwinConfig = "$HOME/src/github.com/jackdewinter/dotfiles/darwin";
 
   # Auto upgrade nix package and the daemon service.
-  nix.enable = true;
+  # TODO: find a way to enable this with Determinate
+  nix.enable = false;
 
   # Create /etc/zshrc that loads the nix-darwin environment.
   programs = {
