@@ -10,3 +10,6 @@
   st = status --short --branch
   co = checkout
   my-commits = log --author='Jack Dewinter' --author-date-order --date=format:'%a %b %d %r' --format='%h | %ad | %s'
+[user]
+  name = Jack Dewinter
+  email = jackdewinter1@gmail.com
