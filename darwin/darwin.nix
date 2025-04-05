@@ -44,16 +44,17 @@
     enable = true;
 
     casks = [
-      "1password"
-      "bartender"
-      "google-chrome"
-      "firefox"
-      "ghostty"
-      "hammerspoon"
-      "karabiner-elements"
-      "keycastr"
-      "obsidian"
+      "hyper"
+      "soundsource"
+      "cursor"
+      "setapp"
       "raycast"
+      "rewind"
+      "orbstack"
+      "eloston-chromium"
+      "linear-linear"
+      "hammerspoon"
+      "raindropio"
     ];
 
     masApps = {
