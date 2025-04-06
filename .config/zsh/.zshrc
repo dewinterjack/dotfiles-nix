@@ -84,5 +84,8 @@ export EDITOR="code --wait"
 eval "$(github-copilot-cli alias -- "$0")"
 test -d "$HOME/.tea" && source <("$HOME/.tea/tea.xyz/v*/bin/tea" --magic=zsh --silent)
 
+# https://github.com/Schniz/fnm#zsh
+eval "$(fnm env --use-on-cd --shell zsh)"
+
 # disable zsh auto correction
 unsetopt correct_all

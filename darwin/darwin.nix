@@ -43,6 +43,11 @@
   homebrew = {
     enable = true;
 
+    brews = [
+      "fnm" # node manager
+      "gh"
+    ];
+
     casks = [
       "hyper"
       "soundsource"
