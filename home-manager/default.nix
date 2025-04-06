@@ -7,7 +7,7 @@
   ];
 
   home = {
-    stateVersion = "24.05"; # Please read the comment before changing.
+    stateVersion = "24.11";
 
     # The home.packages option allows you to install Nix packages into your
     # environment.
