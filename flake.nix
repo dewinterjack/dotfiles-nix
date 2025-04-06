@@ -32,7 +32,7 @@
           {
             _module.args = { inherit inputs; };
             home-manager = {
-              users.${user} = import ./home-manager;
+              users.${user} = import ./home;
             };
             users.users.${user}.home = "/Users/${user}";
             nix.settings.trusted-users = [ user ];
@@ -52,7 +52,7 @@
           home-manager.nixosModules.home-manager
           {
             home-manager = {
-              users.nixos = import ./home-manager;
+              users.nixos = import ./home;
             };
             nix.settings.trusted-users = [ "nixos" ];
           }
