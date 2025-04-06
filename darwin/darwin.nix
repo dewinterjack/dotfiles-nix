@@ -51,7 +51,6 @@
     casks = [
       "hyper"
       "soundsource"
-      "cursor"
       "setapp"
       "raycast"
       "rewind"
