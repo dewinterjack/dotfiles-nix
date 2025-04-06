@@ -1,16 +1,7 @@
 # https://github.com/nix-community/home-manager/blob/master/modules/programs/vscode.nix
+{ pkgs, ... }:
 {
-  config,
-  pkgs,
-  lib,
-  ...
-}: 
-let
-  inherit (lib) mkIf;
-  cfg = config.home-config.dev;
-in
-{
-  programs.vscode = mkIf cfg.vscode.enable {
+  programs.vscode = {
     enable = true;
     package = pkgs.code-cursor;
     profiles = {

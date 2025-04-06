@@ -4,6 +4,7 @@
   imports = [
     ./git.nix
     ./zsh.nix
+    ./cursor.nix
   ];
 
   home = {
@@ -27,4 +28,8 @@
   };
 
   services.ollama.enable = true;
+
+  # Allow non open source packages
+  nixpkgs.config.allowUnfree = true;
+  nixpkgs.config.allowUnfreePredicate = _: true;
 }
