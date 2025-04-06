@@ -12,7 +12,7 @@ in
 {
   programs.vscode = mkIf cfg.vscode.enable {
     enable = true;
-    package = pkgs.vscode; # apparently this can be cursor but it wasn't working for me https://rycee.gitlab.io/home-manager/options.xhtml#opt-programs.vscode.package
+    package = pkgs.code-cursor;
     profiles = {
       default = {
         enableExtensionUpdateCheck = true;
@@ -21,6 +21,7 @@ in
           eamodio.gitlens
           esbenp.prettier-vscode
           dbaeumer.vscode-eslint
+          jnoortheen.nix-ide
         ];
         keybindings = [
           # {
