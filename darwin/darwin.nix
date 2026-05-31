@@ -39,6 +39,10 @@
     };
   };
 
+  system.activationScripts.postActivation.text = ''
+    ${pkgs.curl}/bin/curl -fsSL https://github.com/AikidoSec/safe-chain/releases/latest/download/install-safe-chain.sh | /bin/sh
+  '';
+
   homebrew = {
     enable = true;
 
