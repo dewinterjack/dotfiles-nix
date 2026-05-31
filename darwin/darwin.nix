@@ -1,6 +1,9 @@
 { pkgs, ... }:
 
 {
+  # Match the build group ID created by the Lix installer on macOS.
+  ids.gids.nixbld = 350;
+
   # List packages installed in system profile. To search by name, run:
   # $ nix-env -qaP | grep wget
   environment.systemPackages = [
