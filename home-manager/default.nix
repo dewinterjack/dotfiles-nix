@@ -4,7 +4,7 @@
   imports = [
     ./git.nix
     ./zsh.nix
-    ./cursor.nix
+    ./vscode.nix
   ];
 
   home = {
