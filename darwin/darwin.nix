@@ -49,6 +49,7 @@
 
     casks = [
       "1password"
+      "gitkraken"
       "iterm2"
       "soundsource"
       "setapp"
