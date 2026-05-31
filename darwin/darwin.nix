@@ -48,16 +48,17 @@
     ];
 
     casks = [
-      "hyper"
+      "iterm2"
       "soundsource"
       "setapp"
       "raycast"
-      "rewind"
       "orbstack"
       "eloston-chromium"
-      "linear-linear"
+      "linear"
       "hammerspoon"
       "raindropio"
+      "codex"
+      "codex-app"
     ];
 
     masApps = {
