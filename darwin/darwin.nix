@@ -48,6 +48,7 @@
     ];
 
     casks = [
+      "1password"
       "iterm2"
       "soundsource"
       "setapp"
@@ -59,6 +60,7 @@
       "raindropio"
       "codex"
       "codex-app"
+      "obsidian"
     ];
 
     masApps = {
