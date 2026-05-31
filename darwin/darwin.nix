@@ -55,7 +55,7 @@
       "setapp"
       "raycast"
       "orbstack"
-      "eloston-chromium"
+      "ungoogled-chromium"
       "linear"
       "hammerspoon"
       "raindropio"
