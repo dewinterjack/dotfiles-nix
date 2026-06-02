@@ -18,6 +18,10 @@
     	update = "darwin-rebuild switch --flake ~/code/dotfiles-nix";
     };
 		initExtra = ''
+			if command -v fnm >/dev/null 2>&1; then
+				eval "$(fnm env --use-on-cd --shell zsh)"
+			fi
+
 			. ${../.config/zsh/.zshrc}
 		'';
   };

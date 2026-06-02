@@ -9,6 +9,9 @@
   environment.systemPackages = [
     pkgs.home-manager
   ];
+  environment.systemPath = [
+    "/opt/homebrew/bin"
+  ];
 
   # Use a custom configuration.nix location.
   # $ darwin-rebuild switch -I darwin-config=$HOME/.config/nixpkgs/darwin/configuration.nix
@@ -66,6 +69,8 @@
       "codex"
       "codex-app"
       "obsidian"
+      "dbngin"
+      "tailscale"
     ];
 
     masApps = {
