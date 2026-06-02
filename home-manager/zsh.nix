@@ -10,6 +10,7 @@
     oh-my-zsh = {
     	enable = true;
 			plugins = [ "git" ];
+      # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 			theme = "agnoster";
     };
     shellAliases = {
