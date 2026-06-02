@@ -3,6 +3,7 @@
 {
   imports = [
     ./git.nix
+    ./iterm2.nix
     ./zsh.nix
     ./vscode.nix
   ];
